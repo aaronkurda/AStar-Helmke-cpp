@@ -1,0 +1,37 @@
+Callsign Gewichtsklasse    Früh-Zeit   Spät-Zeit  Letzte Planung    Zielzeit
+   AF458 M 16:31:04   16:48:04   16:25:05   16:31:04   
+ BAW7896 L 16:31:34   16:48:04   16:38:06   16:33:09   
+   HBAEL L 16:32:04   16:33:54   16:38:05   16:34:24   
+   AF345 M 16:33:44   16:44:04   16:32:03   16:35:39   
+   LH245 M 16:31:44   16:44:04   16:35:03   16:36:54   
+  LH1234 H 16:31:04   16:48:04   16:35:05   16:38:09   
+  IBE765 H 16:33:40   16:48:04   16:35:03   16:39:49   
+  BAW766 M 16:33:41   16:41:40   16:40:03   16:41:54   
+  AF8797 M 16:44:00   16:50:04   16:38:03   16:44:00
+Ende
+Vorgänger-Flugzeuge 
+   Pred1 L 15:31:04   15:48:04   15:25:05   16:24:04   
+   Pred2 M 15:31:34   15:48:04   14:38:06   16:28:09   
+Ende   
+das erwartete Ergebnis
+   AF458 M 16:31:04   16:48:04   16:25:05   16:31:04   
+ BAW7896 L 16:31:34   16:48:04   16:38:06   16:33:09   
+   HBAEL L 16:32:04   16:33:54   16:38:05   16:34:24   
+   AF345 M 16:33:44   16:44:04   16:32:03   16:35:39   
+   LH245 M 16:31:44   16:44:04   16:35:03   16:36:54   
+  LH1234 H 16:31:04   16:48:04   16:35:05   16:38:09   
+  IBE765 H 16:33:40   16:48:04   16:35:03   16:39:49   
+  BAW766 M 16:33:41   16:41:40   16:40:03   16:41:54   
+  AF8797 M 16:44:00   16:50:04   16:38:03   16:44:00
+Ende   
+Bewertung: 380720.33
+Ende   
+
+Bewertungen alles gleich
+Calculates Quality of expected Result:    380720.33
+nur Earliest-Zeit
+Calculates Quality of expected Result:    697785
+Nur Latest-Zeit
+Calculates Quality of expected Result:    1096
+Nur Letzte Planzeit
+Calculates Quality of expected Result:    443280

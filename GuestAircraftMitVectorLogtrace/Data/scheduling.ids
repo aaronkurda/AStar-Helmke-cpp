@@ -1,0 +1,26 @@
+##Bei XML-Ausgabe müssen die folgenden IDs ausgeschaltet sein
+### Ausgabe mit Zeilennummern
+#LINESTAMP=1
+### Ausgabe mit Uhrzeit vor jeder Zeile
+TIMESTAMP=1
+### Begrenzung der Ausgabe durch Angabe der Ringpuffer-Größe in KB
+#HISTORY=10
+############################################################
+
+#### Einschalten der Constructor-Ausgaben
+#Constructor
+#### Einschalten der Destructor-Ausgaben
+#Destructor
+main
+
+TestSequence
+TestGuestArray
+TestFileInput
+
+#Scheduling
+#TakeSelect
+#evaluateSequenceFunc
+#getBestSequenceFunc
+#GetBestQualiClass
+
+TestGuestArray

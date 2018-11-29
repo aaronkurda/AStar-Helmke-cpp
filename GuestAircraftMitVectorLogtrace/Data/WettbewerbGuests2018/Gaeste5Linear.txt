@@ -1,0 +1,21 @@
+Name        Aufstehzeit Badzeit
+Matthias    08:14          5  
+Anna        08:15          2  
+Mike        08:15          4  
+Sönke       08:30          52 
+Olga        08:45          17 
+Ende
+Vorgänger-Gaeste
+   Dummy1        0:00  0  0:00
+Ende   
+das erwartete Ergebnis
+        Anna     08:15    2   08:15
+        Mike     08:15    4   08:17
+    Matthias     08:14    5   08:21
+        Olga     08:45   17   08:45
+       Sönke     08:30   52   09:02
+Ende   
+Bewertung: 41
+Ende   
+
+

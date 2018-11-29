@@ -1,0 +1,213 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Quelldateien">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Headerdateien">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Ressourcendateien">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Headerdateien\Test">
+      <UniqueIdentifier>{e96dbd8f-1a76-4dbe-ae0c-252f04741b0a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headerdateien\LogTrace">
+      <UniqueIdentifier>{9f6b27c8-d0ab-445d-a04a-6449bdbc9341}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Quelldateien\Test">
+      <UniqueIdentifier>{c7b189e9-a129-4424-a700-18e6eef55ca8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Quelldateien\LogTrace">
+      <UniqueIdentifier>{769aefa5-138e-4b08-97df-392ca6fb924b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\BaseDir.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Aircraft.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AStar.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AStarAcft.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dosFarben.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\EvalSeqAircraft.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\EvalSequence.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FileInput.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Guest.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\GuestArray.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\QualityFuncAircraft.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\QualityFuncBase.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\QualityFuncInterface.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\QualityFuncStatistics.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TakeSelect.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TakeSelectSearchParam.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\testMakros.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\zeitmess.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\logtrace\config.h">
+      <Filter>Headerdateien\LogTrace</Filter>
+    </ClInclude>
+    <ClInclude Include="..\logtrace\defbool.hpp">
+      <Filter>Headerdateien\LogTrace</Filter>
+    </ClInclude>
+    <ClInclude Include="..\logtrace\define.hpp">
+      <Filter>Headerdateien\LogTrace</Filter>
+    </ClInclude>
+    <ClInclude Include="..\logtrace\logstream.hpp">
+      <Filter>Headerdateien\LogTrace</Filter>
+    </ClInclude>
+    <ClInclude Include="..\logtrace\logtrace.h">
+      <Filter>Headerdateien\LogTrace</Filter>
+    </ClInclude>
+    <ClInclude Include="..\logtrace\ttime.hpp">
+      <Filter>Headerdateien\LogTrace</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Test\SearchAircraftTest.h">
+      <Filter>Headerdateien\Test</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Test\SearchGuestTest.h">
+      <Filter>Headerdateien\Test</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Test\TestAStar.h">
+      <Filter>Headerdateien\Test</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Test\TestAStarAcft.h">
+      <Filter>Headerdateien\Test</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Test\TestFileInput.h">
+      <Filter>Headerdateien\Test</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Test\TestGuestArray.h">
+      <Filter>Headerdateien\Test</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Test\TestSequence.h">
+      <Filter>Headerdateien\Test</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\main.cxx">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Aircraft.cxx">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AStar.cxx">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AStarAcft.cxx">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\EvalSeqAircraft.cxx">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\EvalSequence.cxx">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FileInput.cxx">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Guest.cxx">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\GuestArray.cxx">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\QualityFuncAircraft.cxx">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\QualityFuncBase.cxx">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\QualityFuncStatistics.cxx">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TakeSelect.cxx">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\zeitmess.cxx">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\logtrace\define.cpp">
+      <Filter>Quelldateien\LogTrace</Filter>
+    </ClCompile>
+    <ClCompile Include="..\logtrace\idmap.cpp">
+      <Filter>Quelldateien\LogTrace</Filter>
+    </ClCompile>
+    <ClCompile Include="..\logtrace\log.cpp">
+      <Filter>Quelldateien\LogTrace</Filter>
+    </ClCompile>
+    <ClCompile Include="..\logtrace\logstack.cpp">
+      <Filter>Quelldateien\LogTrace</Filter>
+    </ClCompile>
+    <ClCompile Include="..\logtrace\logstream.cpp">
+      <Filter>Quelldateien\LogTrace</Filter>
+    </ClCompile>
+    <ClCompile Include="..\logtrace\ttime.cpp">
+      <Filter>Quelldateien\LogTrace</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Test\SearchAircraftTest.cxx">
+      <Filter>Quelldateien\Test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Test\SearchGuestTest.cxx">
+      <Filter>Quelldateien\Test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Test\TestAStar.cxx">
+      <Filter>Quelldateien\Test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Test\TestAStarAcft.cxx">
+      <Filter>Quelldateien\Test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Test\TestFileInput.cxx">
+      <Filter>Quelldateien\Test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Test\TestGuestArray.cxx">
+      <Filter>Quelldateien\Test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Test\TestSequence.cxx">
+      <Filter>Quelldateien\Test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Test\TestAStarAcftWettbewerb.cxx">
+      <Filter>Quelldateien\Test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Test\TestAStarWettbewerb.cxx">
+      <Filter>Quelldateien\Test</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

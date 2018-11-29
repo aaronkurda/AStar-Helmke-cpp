@@ -1,0 +1,296 @@
+2010-11-12 Hartmut Helmke  <Hartmut.Helmke@dlr.de>
+   private declaration of assignment operator for LogPlain without definition to prevent VS 2008 warning
+    
+2006-05-01  Hartmut Helmke  <Hartmut.Helmke@dlr.de>
+        * IDMap::constrEqualDestr() added
+        * CONSTR_DESTR_CNT_OK is new
+        
+2005-03-24  Hartmut Helmke  <Hartmut.Helmke@dlr.de>
+		* log.cpp: get_error_to_cerr() is new
+        * logtrace.h 
+          Use of get_error_to_cerr() in makros WARNING, INFO, ERROR, 
+		    INVARIANT ... and new Makros SUPPRESS_CERR_OUTPUT, 
+			ENABLE_CERR_OUTPUT and ENABLE_CERR_OUTPUT
+
+2003-11-12  Lothar Christoffels  <lothar.christoffels@dlr.de>
+        * logstream.hpp, logstream.cpp:
+        Use of sstream instead of depracated strstream,
+        due to warnings of g++ 3.3.1 compiler.
+
+
+2003-09-19  Hartmut Helmke (1.4.1)
+	* logtrace.h: LT_ERROR is always defined, due to warnings
+	    of C++.Net 7.0 Compiler
+	    
+
+2002-10-24  Frank Hoeppner, Hartmut Helmke (1.4.1)
+	* logstream.hpp: bugfix, problems with setw formatting. Removed
+	removed ts.flush() from template <class T> logstream&
+	operator<<(logstream& ts,const T& t). This template function is
+	invoked by setw(n) manipulators and a flush causes an output
+	before the setw-adjustment is applied to the next output sent to
+	the stream. We do not expect major consequences for the runtime
+	behaviour, because all the TRACE(..) macros end up with "<<endl;"
+	which also causes a flush of the buffer.
+	
+	* logtrace.h (TRACE_TAG): Included LOGTRACE_TEXT_BEGIN/END in
+	TRACE_TAG.
+
+	* config.h, log.cpp: Added LOGTRACE_CDATA, see manual.
+
+2002-04-11  H. Sievert, Hartmut Helmke, Frank Hoeppner (1.4.0)
+
+	* logstack.cpp, log.cpp, logtrace.h: XML-style is now well-formed
+	(as accepted by xmllint) and can be browsed via an XML viewer.
+
+2002-04-10  Frank Hoeppner, Hartmut Helmke
+
+	* idmap.cpp: bugfix when reading ID's, some systems have read
+	empty strings from empty lines, use string_type::size_type instead of
+	unsigned int for compatibility
+
+2002-02-01  Hartmut Helmke  <hartmut.helmke@dlr.de>
+
+	* logtrace.h: INVARIANT_THROW always throws an exception, new
+	INVARIANT_THROW_RELEASE, bugfix in INVARIANT_THROW
+
+2002-03-28  frank hoeppner  <frank.hoeppner@ieee.org>
+
+	* logtrace.h: added INFO_SAMELINE (similar to INFO, no newline but
+	flush)
+
+2001-12-20  Frank Hoeppner  <frank.hoeppner@ieee.org> (1.3.9)
+
+	* log.cpp, logtrace.h, logstack.cpp: introduced LOG_PASSFUNC to
+	distinguish normal PASSIVE logs and PASSIVE function logs. In case
+	of an error, the innermost (active or passive) function log is
+	now printed as the error location on stderr.
+
+2001-12-05  Hartmut Helmke  <hartmut.helmke@dlr.de> (1.3.8)
+
+	* logtrace.h, log.cpp: New INVARIANT_THROW macro that does not report
+	invariant violation on cerr (but in logfile) and throws an exception.
+	
+	* logstream.cpp: Deletion of mp_buffer_start inserted.
+
+	* logtrace.h: Now INFO uses TRACE_ID(ALWAYS_ID,...) instead of
+	TRACE(...), since INFO is meant to be context-independent.
+
+2001-10-08  Frank Hoeppner  <frank.hoeppner@ieee.org>
+
+	* logtrace.h: encapsulated code for INFO macro in {} parantheses
+	(to obtain expected behaviour when using ``if (expr) INFO(...);'')
+
+2001-08-23  Frank Hoeppner  <frank.hoeppner@ieee.org>
+
+	* idmap.cpp: Startup message contains info about how many IDs have
+	been found in the ID file (excluding those starting with # or //
+	or ending with =n).
+
+2001-06-19  Frank Hoeppner  <frank.hoeppner@ieee.org>
+
+	* idmap.cpp: Division by zero if id file is empty. Avoided
+	by initializing maxw in idmap.cpp to 6 (instead of 0).
+
+2001-04-26  Frank Hoeppner  <frank.hoeppner@ieee.org> (1.3.7)
+
+	* log.cpp: If ABSTIME=1 is provided in the ID file, the time
+	stamps will refer to (approx.) April, 1st 2001.
+
+	* trace.hpp: Compatibility bugfix: CLog/DLog consider
+	CONSTRUCTOR_ID and DESTRUCTOR_ID
+
+2001-04-26  Reiner Suikat  <reiner.suikat@dlr.de>
+            Hartmut Helmke  <hartmut.helmke@dlr.de>
+
+	* trace.hpp: Compatibility bugfix for old CLog, DLog, Log classes
+
+2001-04-26  Hartmut Helmke  <hartmut.helmke@dlr.de>
+
+	* idmap.cpp: Added static_cast<> to avoid compiler warning with
+	DEC Alpha compiler.
+
+	* logtrace.h: Bugfix: missing [BEGIN|END]_[PRE|SUF]FIX if LEVEL<2
+
+	* cr_inst.cpp: provided file with additional template
+	instantiation lines for DEC compiler.
+
+2001-04-25  Frank Hoeppner  <frank.hoeppner@ieee.org>
+
+	* log.cpp: Removed ap_tag argument from LogCtor::LogCtor and
+	LogDtor::LogDtor since tag is already determined by class.
+
+2001-04-24  Frank Hoeppner  <frank.hoeppner@ieee.org> (1.3.6)
+
+	* logtrace.h, log.cpp, idmap.cpp, logstream.cpp, trace.hpp: Added
+	the prefix LOGTRACE_ to a number of macros to avoid name conflicts
+	with outher files.
+
+2001-04-17  Frank Hoeppner  <frank.hoeppner@ieee.org> (1.3.5)
+
+	* log.cpp: Changed semantics of HISTORY=n, now n is specified in
+	kilobytes (and no longer in bytes)  
+
+	* idmap.cpp: <idusage>-output considers varying length of IDs 
+
+2001-04-16  Frank Hoeppner  <frank.hoeppner@ieee.org> (1.3.4)
+
+	* log.cpp: changed output of end-of-log-line: the line number
+	where the log output started is no longer displayed, but the
+	log-information is repeated (e.g., the function name in case of a
+	LOG_FUNCTION).
+
+2001-04-15  Frank Hoeppner  <frank.hoeppner@ieee.org>
+
+	* log.cpp, logtrace.h: Added LogCtor and LogDtor classes for
+	LOG_CONSTRUCTOR and LOG_DESTRUCTOR. Now, with LOG_CONSTRUCTOR and
+	LOG_DESTRUCTOR output is only produced in case the IDs
+	"Constructor" and "Destructor", resp., have been found in the ID
+	file. (Improves downward compatibility.)
+
+2001-04-12  Hartmut Helmke  <hartmut.helmke@dlr.de>
+
+	* trace.hpp: added "using namespace std/logtrace" if
+	USE_NAMESPACES is defined. 
+
+	* acconfig.h: disabled some compiler warnings for MS VC++
+
+2001-04-11  Frank Hoeppner  <frank.hoeppner@ieee.org> (1.3.3)
+
+	* testlogtrace.cpp: added 2 lines of code that show how to proceed
+	if one want to get absolute instead of relative time stamps.
+
+2001-04-11  Hartmut Helmke  <hartmut.helmke@dlr.de>
+
+	* trace.hpp: added CLog and DLog macros (mapped to LOG_CONSTRUCTOR
+	and LOG_DESTRUCTOR)
+
+	* idmap.cpp: changed m_ids.insert(make_pair(.,.)) to m_ids[.]=. to
+	get it compiled under old SGI STL
+
+2001-04-10  Frank Hoeppner  <frank.hoeppner@ieee.org>
+
+	* log.cpp: removed version number output in logfile to obtain
+	identical logfile output when using different logtrace releases
+	
+2001-04-10  Frank Hoeppner  <frank.hoeppner@ieee.org> (1.3.2)
+
+	* trace.hpp: replaced a number of char * const parameters by
+	char_cpc to avoid some warning when they are mapped to the
+	logtrace.h implementations
+
+	* acconfig.h, logtrace.h, log.cpp, logstack.cpp, idmap.cpp,
+	logstream.hpp, logstream.cpp : new USE_NAMESPACES macro. If set
+	(which is the default), the logtrace library is put into a
+	namespace "logtrace" and standard header are included by <x>
+	instead of <x.h>. Consider deleting this definition for better
+	downward compatibility (since previous releases did not use
+	namespaces).
+
+	* idmap.cpp, log.cpp, logstack.cpp: code is only compiled if
+	LOGTRACE_LEVEL>=2.
+
+2001-04-06  Frank Hoeppner  <frank.hoeppner@ieee.org>
+
+	* logtrace.h: bugfix with writemanip, old version caused endless
+	loops.
+
+2001-04-06  Frank Hoeppner  <frank.hoeppner@ieee.org> (1.3.1)
+
+	* acconfig.h, config.h: added LOGTRACE_INDENTATION 
+
+	* log.cpp: value of LOGTRACE_INDENTATION determines the number of
+	space that is used to indicate nesting of logs (default 3).
+
+2001-04-06  Frank Hoeppner  <frank.hoeppner@ieee.org> 
+
+	* acconfig.h, config.h: added LOGTRACE_PLAIN_STYLE macro
+
+	* log.cpp, logstream.cpp: if LOGTRACE_PLAIN_STYLE is set, the
+	output is "plain", not in XML style.
+
+2001-04-05  Frank Hoeppner  <frank.hoeppner@ieee.org>
+
+	* log.cpp, logtrace.h: LOG_DESTRUCTOR did not work if class name
+	is a variable (concatenation with "~" fails). Now, write_func()
+	adds "~" if mp_tag==DESTRUCTOR_TAG. (I had to change the content
+	of DESTRUCTOR_TAG to "destruct". Otherwise, if FUNCTION_TAG,
+	CONSTRUCTOR_TAG, etc. contain the same string, compiler
+	optimization identifies all these pointers and we get "~" with all
+	functions.)
+	
+2001-04-05  Hartmut Helmke  <hartmut.helmke@dlr.de>
+
+	* logstream.cpp: fixed some problems in logstream.cpp with MS VC++
+
+2001-03-20  Frank Hoeppner  <frank.hoeppner@ieee.org> (1.3.0)
+
+	* whole library completely rewritten. 
+
+2000-09-13  Frank Hoeppner  <frank.hoeppner@ieee.org>
+
+	* if no debugging is used (undef LOGTRACE_DEBUG) but
+	LOGTRACE_ERRMSG is defined, error() and invariant() calls will
+	abort the program and print an error message
+
+2000-09-01  Frank Hoeppner  <frank.hoeppner@ieee.org>
+
+	* changed the name of the Log instance in the FUNCLOG etc. macros
+	(which was log and conflicted with the logarithm function!)
+
+2000-07-31  Frank Hoeppner  <frank.hoeppner@ieee.org>
+
+	* improved documentation
+
+2000-06-05  Frank Hoeppner  <frank.hoeppner@ieee.org>
+
+	* noweb source are included in distribution
+
+2000-05-11  Frank Hoeppner  <frank.hoeppner@ieee.org> (1.1.4)
+
+	* removed erase() command in InitLog due to instantiation problems
+	with sun compiler.
+
+2000-04-17 Hartmut Helmker  <hartmut.helmke@dlr.de>
+
+	* added explicit template instantiations for dec/sun 
+
+2000-04-12  Frank Hoeppner  <hoeppner@et-inf.fho-emden.de> (1.1.3)
+
+	* encapsulated template instantiations in logtest by
+	NO_EXPLICIT_TEMPLATE_INSTANTIATION
+
+	* renamed liblog to liblogtrace to avoid name conflicts
+
+2000-03-20  Hartmut Helmke  <hartmut.helmke@dlr.de> (1.1.2)
+
+	* changed index type of log-map from char_cpc to char_cc
+
+2000-03-07  Frank Hoeppner  <frank.hoeppner@ieee.org>
+
+	* util sources no longer part of logtrace, library util required;
+	new configure scripts
+
+2000-01-20  Frank Hoeppner  <frank.hoeppner@ieee.org>
+
+	* bug fix: Logs with ALWAYS_ID or NEVER_ID caused crashs because
+	the corresponding NULL and ~NULL pointers cannot be written into
+	the output stream.
+
+	* bug fix: truncated output did not work, now new stream is
+	allocated with an increased buffer size (new InitialLog parameter
+	specifies the buffer increment at re-allocation).
+
+1999-11-11  Hartmut Helmke <hartmut.helmke@dlr.de>
+
+	* renamed DEBUG to LOGTRACE_DEBUG
+
+1999-09-16  Hartmut Helmke <hartmut.helmke@dlr.de>
+
+	* using constants INT/FLT/DBL_MIN/MAX instead of MAXINT and
+	including limits.h and float.h instead of values.h
+	
+1999-02-13  Frank Hoeppner  <frank.hoeppner@dlr.de>
+
+	* first version
+

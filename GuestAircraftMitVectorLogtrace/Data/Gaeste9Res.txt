@@ -1,0 +1,10 @@
+Name        Planzeit  Dauer
+        Anna     08:15  2
+        Mike     08:17  4
+     Joachim     08:21  1
+    Matthias     08:22  5
+        Hans     08:41  16
+       Fritz     08:57  13
+      Lothar     09:10  4
+        Olga     09:14 17
+       Sönke     09:31 52

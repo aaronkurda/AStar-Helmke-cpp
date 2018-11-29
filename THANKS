@@ -1,0 +1,14 @@
+
+LogTrace THANKS file
+====================
+
+Here is a list of contributors, help me to keep this list complete.
+
+The first version of this package has been developed when I was with 
+the German Aerospace Center (DLR). Thanks to Dr. Voelckers for the 
+permission to publish the library under LGPL.
+
+* Hartmut Helmke, DLR, Braunschweig (testing and debugging on a number
+  of operating systems and compilers)
+
+* Reiner Suikat, DLR, Braunschweig (testing)
