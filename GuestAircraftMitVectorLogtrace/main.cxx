@@ -26,7 +26,8 @@ using namespace std;
 #include "BaseDir.h"
 
 #include <Guest.h>
-#include "Scheduling/Node.h"
+#include "Scheduling/GuestNode.h"
+#include "Scheduling/GuestTree.h"
 
 #include "logtrace.h"
 using namespace logtrace;
@@ -35,31 +36,15 @@ using namespace logtrace;
 
 int main(){
 	printf("-------------------------------------------\n");
+	Guest* guest1 = new Guest();
+	guest1->setGuestName("Guest1");
 
-  Guest* guest1 = new Guest();
-  (*guest1).setGuestName("ROOT");
+	GuestNode* node2 = new GuestNode(guest1, 0, 10);
+	GuestNode* node1 = new GuestNode(guest1, 0,10);
 
-
-  Guest* guest2 = new Guest();
-  (*guest2).setGuestName("Guest1");
-
-
-  Guest* guest3 = new Guest();
-  (*guest3).setGuestName("Guest2");
-
-  vector<Guest*> guestDatas = vector<Guest*>();
-  guestDatas.push_back(guest1);
-  guestDatas.push_back(guest2);
-  guestDatas.push_back(guest3);
-
-  Node* node1 = new Node(guest1, 0, 0);
-  (*node1).expand(guestDatas);
-
-
-  vector<Node*> children = (*node1).getChildren();
-  for (int i = 0; i < children.size(); i++) {
-	  cout << children.at(i)->getGuest()->getGuestName() << endl;
-  }
+	cout << (*node1<*node2) << endl;
+	cout << (*node1 > *node2) << endl;
+	cout << (*node1 == *node2) << endl;
 
   printf("\n-------------------------------------------\n\n\n");
 
@@ -135,13 +120,4 @@ int main(){
      printScreenColorOnceVal(cout, RED_SCREEN_COLOR, " Fehler in Tests aufgetreten! ***\n");
      return -1;
   }
-  //Node node1 = Node(&guest1, nullptr, 0, 0);
-  //Node node2 = Node(&guest2, &node1, 0, 0);
-  //Node node3 = Node(&guest3, &node2, 0, 0);
-
-  //list<Guest*> bloodline = *node3.getBloodline();
-  //std::list<Guest*>::iterator it;
-  //for (it = bloodline.begin(); it != bloodline.end(); ++it) {
-  //	  std::cout << (*it)->getGuestName();
-  //}
 }

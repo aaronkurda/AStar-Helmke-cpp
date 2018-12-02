@@ -126,7 +126,10 @@
     <ClInclude Include="..\AStar.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
-    <ClInclude Include="Node.h">
+    <ClInclude Include="GuestNode.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="GuestTree.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
   </ItemGroup>
@@ -218,7 +221,10 @@
     <ClCompile Include="..\Test\TestAStarWettbewerb.cxx">
       <Filter>Quelldateien\Test</Filter>
     </ClCompile>
-    <ClCompile Include="Node.cpp">
+    <ClCompile Include="GuestNode.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="GuestTree.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
   </ItemGroup>

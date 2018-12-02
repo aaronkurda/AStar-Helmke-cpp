@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -50,7 +50,8 @@
     <ClInclude Include="..\Test\TestGuestArray.h" />
     <ClInclude Include="..\Test\TestSequence.h" />
     <ClInclude Include="..\zeitmess.h" />
-    <ClInclude Include="Node.h" />
+    <ClInclude Include="GuestNode.h" />
+    <ClInclude Include="GuestTree.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\Aircraft.cxx" />
@@ -85,7 +86,8 @@
     <ClCompile Include="..\Test\TestGuestArray.cxx" />
     <ClCompile Include="..\Test\TestSequence.cxx" />
     <ClCompile Include="..\zeitmess.cxx" />
-    <ClCompile Include="Node.cpp" />
+    <ClCompile Include="GuestNode.cpp" />
+    <ClCompile Include="GuestTree.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
