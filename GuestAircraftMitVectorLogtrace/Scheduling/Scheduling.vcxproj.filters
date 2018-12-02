@@ -25,15 +25,18 @@
     <Filter Include="Quelldateien\LogTrace">
       <UniqueIdentifier>{769aefa5-138e-4b08-97df-392ca6fb924b}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Headerdateien\astar">
+      <UniqueIdentifier>{a60c8c11-f88d-427c-80d6-f690d6811333}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Quelldateien\astar">
+      <UniqueIdentifier>{78779983-c65c-434e-8f63-d7951cea5df4}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\BaseDir.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
     <ClInclude Include="..\Aircraft.h">
-      <Filter>Headerdateien</Filter>
-    </ClInclude>
-    <ClInclude Include="..\AStar.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
     <ClInclude Include="..\AStarAcft.h">
@@ -119,6 +122,12 @@
     </ClInclude>
     <ClInclude Include="..\Test\TestSequence.h">
       <Filter>Headerdateien\Test</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AStar.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="Node.h">
+      <Filter>Headerdateien</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -208,6 +217,9 @@
     </ClCompile>
     <ClCompile Include="..\Test\TestAStarWettbewerb.cxx">
       <Filter>Quelldateien\Test</Filter>
+    </ClCompile>
+    <ClCompile Include="Node.cpp">
+      <Filter>Quelldateien</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

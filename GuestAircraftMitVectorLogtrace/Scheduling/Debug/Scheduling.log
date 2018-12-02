@@ -1,0 +1,150 @@
+﻿  Aircraft.cxx
+  AStar.cxx
+  AStarAcft.cxx
+  EvalSeqAircraft.cxx
+  EvalSequence.cxx
+  FileInput.cxx
+  Guest.cxx
+  GuestArray.cxx
+  define.cpp
+  idmap.cpp
+  log.cpp
+  logstack.cpp
+  logstream.cpp
+  ttime.cpp
+  main.cxx
+  QualityFuncAircraft.cxx
+  QualityFuncStatistics.cxx
+  TakeSelect.cxx
+  SearchAircraftTest.cxx
+  SearchGuestTest.cxx
+  Code wird generiert...
+  Kompilieren...
+  TestAStar.cxx
+  TestAStarAcft.cxx
+  TestAStarAcftWettbewerb.cxx
+  TestAStarWettbewerb.cxx
+  TestFileInput.cxx
+  TestGuestArray.cxx
+  TestSequence.cxx
+  zeitmess.cxx
+  Node.cpp
+d:\uni\c++\astar-helmke-cpp\guestaircraftmitvectorlogtrace\scheduling\node.cpp(10): error C3867: "Guest::getWakeUpTime": Keine Standardsyntax; "&" zum Erstellen eines Verweises auf das Member verwenden
+d:\uni\c++\astar-helmke-cpp\guestaircraftmitvectorlogtrace\scheduling\node.cpp(10): error C2446: ">": Keine Konvertierung von "int (__thiscall Guest::* )(void) const" in "int"
+  d:\uni\c++\astar-helmke-cpp\guestaircraftmitvectorlogtrace\scheduling\node.cpp(10): note: Es gibt keinen Kontext, in dem diese Konvertierung möglich ist
+d:\uni\c++\astar-helmke-cpp\guestaircraftmitvectorlogtrace\scheduling\node.cpp(12): error C3867: "Guest::getWakeUpTime": Keine Standardsyntax; "&" zum Erstellen eines Verweises auf das Member verwenden
+d:\uni\c++\astar-helmke-cpp\guestaircraftmitvectorlogtrace\scheduling\node.cpp(12): error C2297: "-": Ungültig, da der rechte Operand vom Typ "int (__thiscall Guest::* )(void) const" ist
+d:\uni\c++\astar-helmke-cpp\guestaircraftmitvectorlogtrace\scheduling\node.cpp(15): error C3867: "Guest::getWakeUpTime": Keine Standardsyntax; "&" zum Erstellen eines Verweises auf das Member verwenden
+d:\uni\c++\astar-helmke-cpp\guestaircraftmitvectorlogtrace\scheduling\node.cpp(15): error C2440: "=": "int (__thiscall Guest::* )(void) const" kann nicht in "int" konvertiert werden
+  d:\uni\c++\astar-helmke-cpp\guestaircraftmitvectorlogtrace\scheduling\node.cpp(15): note: Es gibt keinen Kontext, in dem diese Konvertierung möglich ist
+d:\uni\c++\astar-helmke-cpp\guestaircraftmitvectorlogtrace\scheduling\node.cpp(28): error C3867: "std::list<Node *,std::allocator<_Ty>>::clear": Keine Standardsyntax; "&" zum Erstellen eines Verweises auf das Member verwenden
+          with
+          [
+              _Ty=Node *
+          ]
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xmemory0(951): error C2528: "pointer": Zeiger auf Verweis ungültig
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xmemory0(903): note: Siehe Verweis auf die Klasse Vorlage-Instanziierung "std::allocator<_Ty>", die kompiliert wird.
+          with
+          [
+              _Ty=Guest &
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\list(390): note: Siehe Verweis auf die Klasse Vorlage-Instanziierung "std::allocator_traits<_Alloc>", die kompiliert wird.
+          with
+          [
+              _Alloc=std::allocator<Guest &>
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\list(390): note: Siehe Verweis auf die Alias Vorlage-Instanziierung "std::_Rebind_alloc_t<std::allocator<_Ty>,_Ty>", die kompiliert wird.
+          with
+          [
+              _Ty=Guest &
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\list(440): note: Siehe Verweis auf die Klasse Vorlage-Instanziierung "std::_List_base_types<_Ty,_Alloc>", die kompiliert wird.
+          with
+          [
+              _Ty=Guest &,
+              _Alloc=std::allocator<Guest &>
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\list(689): note: Siehe Verweis auf die Klasse Vorlage-Instanziierung "std::_List_alloc<std::_List_base_types<_Ty,_Alloc>>", die kompiliert wird.
+          with
+          [
+              _Ty=Guest &,
+              _Alloc=std::allocator<Guest &>
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\list(740): note: Siehe Verweis auf die Klasse Vorlage-Instanziierung "std::_List_buy<_Ty,_Alloc>", die kompiliert wird.
+          with
+          [
+              _Ty=Guest &,
+              _Alloc=std::allocator<Guest &>
+          ]
+  d:\uni\c++\astar-helmke-cpp\guestaircraftmitvectorlogtrace\scheduling\node.cpp(52): note: Siehe Verweis auf die Klasse Vorlage-Instanziierung "std::list<Guest &,std::allocator<_Ty>>", die kompiliert wird.
+          with
+          [
+              _Ty=Guest &
+          ]
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xmemory0(952): error C2528: "const_pointer": Zeiger auf Verweis ungültig
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xmemory0(970): error C2528: "address": Zeiger auf Verweis ungültig
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xmemory0(975): error C2528: "address": Zeiger auf Verweis ungültig
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xmemory0(989): error C2528: "_Ptr": Zeiger auf Verweis ungültig
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xmemory0(996): error C2528: "allocate": Zeiger auf Verweis ungültig
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xmemory0(1002): error C2528: "allocate": Zeiger auf Verweis ungültig
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xmemory0(840): error C2528: "abstract declarator": Zeiger auf Verweis ungültig
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xmemory0(905): note: Siehe Verweis auf die Klasse Vorlage-Instanziierung "std::_Default_allocator_traits<_Alloc>", die kompiliert wird.
+          with
+          [
+              _Alloc=std::allocator<Guest &>
+          ]
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xmemory0(841): error C2528: "abstract declarator": Zeiger auf Verweis ungültig
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xmemory0(860): error C2528: "<template-parameter>": Zeiger auf Verweis ungültig
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xmemory0(866): error C2528: "<template-parameter>": Zeiger auf Verweis ungültig
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\list(406): error C2528: "<template-parameter>": Zeiger auf Verweis ungültig
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xmemory0(934): error C2528: "abstract declarator": Zeiger auf Verweis ungültig
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\list(381): note: Siehe Verweis auf die Klasse Vorlage-Instanziierung "std::_Simple_types<_Ty>", die kompiliert wird.
+          with
+          [
+              _Ty=Guest &
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\list(449): note: Siehe Verweis auf die Klasse Vorlage-Instanziierung "std::_List_simple_types<_Ty>", die kompiliert wird.
+          with
+          [
+              _Ty=Guest &
+          ]
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xmemory0(935): error C2528: "abstract declarator": Zeiger auf Verweis ungültig
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\list(1164): error C2535: "void std::list<Guest &,std::allocator<_Ty>>::push_front(_Ty)": Memberfunktion bereits definiert oder deklariert
+          with
+          [
+              _Ty=Guest &
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\list(899): note: Siehe Deklaration von "std::list<Guest &,std::allocator<_Ty>>::push_front"
+          with
+          [
+              _Ty=Guest &
+          ]
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\list(1174): error C2535: "void std::list<Guest &,std::allocator<_Ty>>::push_back(_Ty)": Memberfunktion bereits definiert oder deklariert
+          with
+          [
+              _Ty=Guest &
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\list(904): note: Siehe Deklaration von "std::list<Guest &,std::allocator<_Ty>>::push_back"
+          with
+          [
+              _Ty=Guest &
+          ]
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\list(1223): error C2535: "std::_List_iterator<std::_List_val<std::_List_simple_types<_Ty>>> std::list<_Ty,std::allocator<_Ty>>::insert(std::_List_const_iterator<std::_List_val<std::_List_simple_types<_Ty>>>,_Ty)": Memberfunktion bereits definiert oder deklariert
+          with
+          [
+              _Ty=Guest &
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\list(909): note: Siehe Deklaration von "std::list<Guest &,std::allocator<_Ty>>::insert"
+          with
+          [
+              _Ty=Guest &
+          ]
+d:\uni\c++\astar-helmke-cpp\guestaircraftmitvectorlogtrace\scheduling\node.cpp(56): error C3867: "Node::getGuestData": Keine Standardsyntax; "&" zum Erstellen eines Verweises auf das Member verwenden
+d:\uni\c++\astar-helmke-cpp\guestaircraftmitvectorlogtrace\scheduling\node.cpp(57): error C3867: "Node::getParent": Keine Standardsyntax; "&" zum Erstellen eines Verweises auf das Member verwenden
+d:\uni\c++\astar-helmke-cpp\guestaircraftmitvectorlogtrace\scheduling\node.cpp(57): error C2440: "=": "Node &(__thiscall Node::* )(void)" kann nicht in "Node *" konvertiert werden
+  d:\uni\c++\astar-helmke-cpp\guestaircraftmitvectorlogtrace\scheduling\node.cpp(57): note: Es gibt keinen Kontext, in dem diese Konvertierung möglich ist
+d:\uni\c++\astar-helmke-cpp\guestaircraftmitvectorlogtrace\scheduling\node.cpp(63): error C3867: "Guest::getGuestName": Keine Standardsyntax; "&" zum Erstellen eines Verweises auf das Member verwenden
+d:\uni\c++\astar-helmke-cpp\guestaircraftmitvectorlogtrace\scheduling\node.cpp(63): error C2440: "return": "std::string (__thiscall Guest::* )(void) const" kann nicht in "std::basic_string<char,std::char_traits<char>,std::allocator<char>>" konvertiert werden
+  d:\uni\c++\astar-helmke-cpp\guestaircraftmitvectorlogtrace\scheduling\node.cpp(63): note: Quelltyp konnte von keinem Konstruktor angenommen werden, oder die Überladungsauflösung des Konstruktors ist mehrdeutig
+d:\uni\c++\astar-helmke-cpp\guestaircraftmitvectorlogtrace\scheduling\node.cpp(76): error C3867: "Node::toString": Keine Standardsyntax; "&" zum Erstellen eines Verweises auf das Member verwenden
+  Code wird generiert...

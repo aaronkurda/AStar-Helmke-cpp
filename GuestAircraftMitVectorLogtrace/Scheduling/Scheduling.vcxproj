@@ -50,6 +50,7 @@
     <ClInclude Include="..\Test\TestGuestArray.h" />
     <ClInclude Include="..\Test\TestSequence.h" />
     <ClInclude Include="..\zeitmess.h" />
+    <ClInclude Include="Node.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\Aircraft.cxx" />
@@ -84,6 +85,7 @@
     <ClCompile Include="..\Test\TestGuestArray.cxx" />
     <ClCompile Include="..\Test\TestSequence.cxx" />
     <ClCompile Include="..\zeitmess.cxx" />
+    <ClCompile Include="Node.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>

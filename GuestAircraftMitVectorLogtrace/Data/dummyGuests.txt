@@ -1,0 +1,4 @@
+        Name Aufstehzeit     Badzeit
+    Matthias        08:14           5
+       Sönke        08:30          52
+        Olga        08:45          17
