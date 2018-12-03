@@ -86,26 +86,16 @@ vector<GuestNode*>* AStar::expandAll(vector<GuestNode*>* toExpand, int maxExpand
 	return expanded;
 }
 
+bool sortGuestNodes(GuestNode* gn1, GuestNode* gn2) {
+	return (gn1->getFCost() < gn2->getFCost());
+}
+
 GuestNode* AStar::generateTree(vector<const Guest*>& entityList) {
 	vector<GuestNode*>* toExpand = new vector<GuestNode*>();
 	toExpand->push_back(tree->getRoot());
 	while (!toExpand->empty()) {
 		toExpand = expandAll(toExpand, 10, entityList);
-
-		cout << "List: BEGIN" << endl;
-		for (int i = 0; i < toExpand->size(); i++) {
-			cout << toExpand->at(i)->toString() << toExpand->at(i) << endl;
-		}
-		cout << "List: END" << endl;
-
-		sort(toExpand->begin(), toExpand->end());
-
-		cout << "List: BEGIN" << endl;
-		for (int i = 0; i < toExpand->size(); i++) {
-			cout << toExpand->at(i)->toString() << toExpand->at(i) << endl;
-		}
-		cout << "List: END" << endl;
-
+		sort(toExpand->begin(), toExpand->end(), sortGuestNodes);
 		if (toExpand->at(0)->isLeaf()) {
 			return toExpand->at(0);
 		}
