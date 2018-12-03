@@ -28,6 +28,8 @@ using namespace std;
 #include <Guest.h>
 #include "Scheduling/GuestNode.h"
 #include "Scheduling/GuestTree.h"
+#include <AStar.h>
+
 
 #include "logtrace.h"
 using namespace logtrace;
@@ -35,16 +37,7 @@ using namespace logtrace;
 
 
 int main(){
-	printf("-------------------------------------------\n");
-	Guest* guest1 = new Guest();
-	guest1->setGuestName("Guest1");
-
-	GuestNode* node2 = new GuestNode(guest1, 0, 10);
-	GuestNode* node1 = new GuestNode(guest1, 0,10);
-
-	cout << (*node1<*node2) << endl;
-	cout << (*node1 > *node2) << endl;
-	cout << (*node1 == *node2) << endl;
+  printf("-------------------------------------------\n");
 
   printf("\n-------------------------------------------\n\n\n");
 

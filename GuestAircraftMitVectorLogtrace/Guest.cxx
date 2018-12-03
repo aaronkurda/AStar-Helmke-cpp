@@ -119,3 +119,22 @@ bool checkGuest
 
    return true;
 } // checkGuest
+
+bool Guest::operator>(Guest& op2) {
+	if (this->getWakeUpTime() > op2.getWakeUpTime()) {
+		return true;
+	}
+	return false;
+}
+bool Guest::operator<(Guest& op2) {
+	if (this->getWakeUpTime() < op2.getWakeUpTime()) {
+		return true;
+	}
+	return false;
+}
+bool Guest::operator==(Guest& op2) {
+	if (this->getWakeUpTime() == op2.getWakeUpTime()) {
+		return true;
+	}
+	return false;
+}

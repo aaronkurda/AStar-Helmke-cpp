@@ -7,24 +7,24 @@ using namespace std;
 class GuestNode
 {
 public:
-	GuestNode(Guest* guest, GuestNode* parent, int parentFinishTime, int parentFCost);
-	GuestNode(Guest* guest, int parentFinishTime, int parentFCost);
+	GuestNode(const Guest* guest, GuestNode* parent, int parentFinishTime, int parentFCost);
+	GuestNode(const Guest* guest, int parentFinishTime, int parentFCost);
 	~GuestNode();
 	//void removeAllChildren();
 	//void removeParent();
 	void isolate();
 
 	void addChild(GuestNode* child);
-	void expand(vector<Guest*>* guestDatas);
+	void expand(vector<const Guest*>& guestDatas);
 
 	bool isLeaf();
-	vector<Guest*> getBloodline();
+	vector<const Guest*> getBloodline();
 
 	void setFCost(int fCost);
 
 	int getFCost();
-	vector<GuestNode*> getChildren();
-	Guest* getGuest();
+	vector<GuestNode*>* getChildren();
+	const Guest* getGuest();
 	GuestNode* getParent();
 	int getCurrentTime();
 
@@ -32,11 +32,17 @@ public:
 	bool operator<(GuestNode& op2);
 	bool operator==(GuestNode& op2);
 
+	bool operator>(GuestNode* op2);
+	bool operator<(GuestNode* op2);
+	bool operator==(GuestNode* op2);
+
+	void count(int& n);
+
 	string toString();
 	string subtreeToString();
 private:
-	Guest* guest;
-	vector<GuestNode*> children;
+	const Guest* guest;
+	vector<GuestNode*>* children;
 	int fCost;
 	int currentTime;
 	GuestNode* parent;

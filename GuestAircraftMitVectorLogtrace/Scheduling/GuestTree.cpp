@@ -12,7 +12,7 @@ GuestTree::GuestTree()
 
 GuestTree::~GuestTree()
 {
-	delete root;
+	//delete root;
 }
 
 vector<GuestNode*>* GuestTree::getPathExcludingRoot(GuestNode* node) {

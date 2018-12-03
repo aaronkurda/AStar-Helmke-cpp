@@ -18,6 +18,11 @@ public:
    Guest();  // Konstruktor
    ~Guest(); // Destruktur
    Guest& operator=(const Guest& g2);
+
+   bool operator>(Guest& op2);
+   bool operator<(Guest& op2);
+   bool operator==(Guest& op2);
+
    Guest(const Guest& g);  // Kopier-Konstruktor
 
    // Get-Methoden

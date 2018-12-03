@@ -1,2 +1,12 @@
-﻿  main.cxx
+﻿  AStar.cxx
+d:\uni\c++\astar-helmke-cpp\guestaircraftmitvectorlogtrace\astar.h(10): warning C4067: Unerwartete Token nach Präprozessordirektive - Zeilenvorschub erwartet.
+  main.cxx
+d:\uni\c++\astar-helmke-cpp\guestaircraftmitvectorlogtrace\astar.h(10): warning C4067: Unerwartete Token nach Präprozessordirektive - Zeilenvorschub erwartet.
+  TestAStar.cxx
+d:\uni\c++\astar-helmke-cpp\guestaircraftmitvectorlogtrace\astar.h(10): warning C4067: Unerwartete Token nach Präprozessordirektive - Zeilenvorschub erwartet.
+  TestAStarWettbewerb.cxx
+d:\uni\c++\astar-helmke-cpp\guestaircraftmitvectorlogtrace\astar.h(10): warning C4067: Unerwartete Token nach Präprozessordirektive - Zeilenvorschub erwartet.
+  GuestNode.cpp
+d:\uni\c++\astar-helmke-cpp\guestaircraftmitvectorlogtrace\scheduling\guestnode.cpp(193): warning C4267: "+=": Konvertierung von "size_t" nach "int", Datenverlust möglich
+  Code wird generiert...
   Scheduling.vcxproj -> D:\Uni\C++\AStar-Helmke-cpp\GuestAircraftMitVectorLogtrace\Scheduling\x64\Debug\Scheduling.exe

@@ -1,181 +1,181 @@
-> t  0.26500 LogTrace output started
-> t  0.26500 > func "Scheduling::main()"
-> t  0.47000    > func "TestGuestArray::testDeleteElement()"
-> t  0.47400    < func "TestGuestArray::testDeleteElement()"
-> t  0.47400    > func "TestGuestArray::testDeleteFirstN_Elements1()"
-> t  0.47700    < func "TestGuestArray::testDeleteFirstN_Elements1()"
-> t  0.47700    > func "TestGuestArray::testDeleteFirstN_Elements2()"
-> t  0.47900    < func "TestGuestArray::testDeleteFirstN_Elements2()"
-> t  0.58400    > func "TestGuestArray::testEmptyGuestArray()"
-> t  0.58500    < func "TestGuestArray::testEmptyGuestArray()"
-> t  0.58500    > func "TestFileInput::testRead5GuestsNoEmptyLine()"
-> t  0.58500       > func "TestFileInput::testReadGuestsFromFile()"
-> t  0.59400       < func "TestFileInput::testReadGuestsFromFile()"
-> t  0.59400    < func "TestFileInput::testRead5GuestsNoEmptyLine()"
-> t  0.59400    > func "TestFileInput::testRead3GuestsEmptyLines()"
-> t  0.59400       > func "TestFileInput::testReadGuestsFromFile()"
-> t  0.59900       < func "TestFileInput::testReadGuestsFromFile()"
-> t  0.59900    < func "TestFileInput::testRead3GuestsEmptyLines()"
-> t  0.59900    > func "TestFileInput::testCalcMinutesOfDay()"
-> t  0.60000    < func "TestFileInput::testCalcMinutesOfDay()"
-> t  0.60000    > func "TestFileInput::testCalcHourMinute()"
-> t  0.60000    < func "TestFileInput::testCalcHourMinute()"
-> t  0.60000    > func "TestSequence::testEvaluateTime()"
-> t  0.60000    < func "TestSequence::testEvaluateTime()"
-> t  0.60000    > func "TestSequence::testEvaluateSequence()"
-> t  0.60200    < func "TestSequence::testEvaluateSequence()"
-> t  0.60200    > func "TestGuestArray::testCopyGuestArray()"
-> t  0.60600    < func "TestGuestArray::testCopyGuestArray()"
-> t  0.60600    > func "TestSequence::testPermuation()"
-> t  0.60600       1. Permutation: 
-> t  0.60600       1 
-> t  0.60600       9 
-> t  0.60600       2 
-> t  0.60600       3 
-> t  0.60600       2. Permutation: 
-> t  0.60600       1 
-> t  0.60600       9 
-> t  0.60600       3 
-> t  0.60600       2 
-> t  0.60700       3. Permutation: 
-> t  0.60700       2 
-> t  0.60700       1 
-> t  0.60700       3 
-> t  0.60700       9 
-> t  0.60700       4. Permutation: 
-> t  0.60700       2 
-> t  0.60700       1 
-> t  0.60700       9 
-> t  0.60700       3 
-> t  0.60700       5. Permutation: 
-> t  0.60700       2 
-> t  0.60700       3 
-> t  0.60700       1 
-> t  0.60700       9 
-> t  0.60700       6. Permutation: 
-> t  0.60700       2 
-> t  0.60700       3 
-> t  0.60700       9 
-> t  0.60700       1 
-> t  0.60800       7. Permutation: 
-> t  0.60800       2 
-> t  0.60800       9 
-> t  0.60800       1 
-> t  0.60800       3 
-> t  0.60800       8. Permutation: 
-> t  0.60800       2 
-> t  0.60800       9 
-> t  0.60800       3 
-> t  0.60800       1 
-> t  0.60800       9. Permutation: 
-> t  0.60800       3 
-> t  0.60800       1 
-> t  0.60800       2 
-> t  0.60800       9 
-> t  0.60800       10. Permutation: 
-> t  0.60800       3 
-> t  0.60800       1 
-> t  0.60800       9 
-> t  0.60800       2 
-> t  0.60800       11. Permutation: 
-> t  0.60800       3 
-> t  0.60800       2 
-> t  0.60800       1 
-> t  0.60800       9 
-> t  0.60800       12. Permutation: 
-> t  0.60900       3 
-> t  0.60900       2 
-> t  0.60900       9 
-> t  0.60900       1 
-> t  0.60900       13. Permutation: 
-> t  0.60900       3 
-> t  0.60900       9 
-> t  0.60900       1 
-> t  0.60900       2 
-> t  0.60900       14. Permutation: 
-> t  0.60900       3 
-> t  0.60900       9 
-> t  0.60900       2 
-> t  0.60900       1 
-> t  0.60900       15. Permutation: 
-> t  0.60900       9 
-> t  0.60900       1 
-> t  0.60900       2 
-> t  0.60900       3 
-> t  0.60900       16. Permutation: 
-> t  0.60900       9 
-> t  0.60900       1 
-> t  0.60900       3 
-> t  0.60900       2 
-> t  0.60900       17. Permutation: 
-> t  0.61000       9 
-> t  0.61000       2 
-> t  0.61000       1 
-> t  0.61000       3 
-> t  0.61000       18. Permutation: 
-> t  0.61000       9 
-> t  0.61000       2 
-> t  0.61000       3 
-> t  0.61000       1 
-> t  0.61000       19. Permutation: 
-> t  0.61000       9 
-> t  0.61000       3 
-> t  0.61000       1 
-> t  0.61000       2 
-> t  0.61000       20. Permutation: 
-> t  0.61000       9 
-> t  0.61000       3 
-> t  0.61000       2 
-> t  0.61000       1 
-> t  0.61000       21. Permutation: 
-> t  0.61000       1 
-> t  0.61000       2 
-> t  0.61100       3 
-> t  0.61100       9 
-> t  0.61100       22. Permutation: 
-> t  0.61100       1 
-> t  0.61100       2 
-> t  0.61100       9 
-> t  0.61100       3 
-> t  0.61100       23. Permutation: 
-> t  0.61100       1 
-> t  0.61100       3 
-> t  0.61100       2 
-> t  0.61100       9 
-> t  0.61100       24. Permutation: 
-> t  0.61100       1 
-> t  0.61100       3 
-> t  0.61100       9 
-> t  0.61100       2 
-> t  0.61100    < func "TestSequence::testPermuation()"
-> t  0.61100    > func "TestSequence::testGetBestSequence()"
-> t  0.61500    < func "TestSequence::testGetBestSequence()"
-> t  0.61500    > func "TestSequence::testGetBestSequence5()"
-> t  0.67200    < func "TestSequence::testGetBestSequence5()"
-> t  0.67200    > func "TestSequence::testGetBestSequence5()"
-> t  0.72700    < func "TestSequence::testGetBestSequence5()"
-> t  0.72700    > func "TestSequence::testGetBestSequence5()"
-> t  0.78800    < func "TestSequence::testGetBestSequence5()"
-> t  0.78800    > func "TestSequence::testGetBestSequence5()"
-> t  0.84500    < func "TestSequence::testGetBestSequence5()"
-> t  0.84500    > func "TestSequence::testGetBestSequence5()"
-> t  0.90100    < func "TestSequence::testGetBestSequence5()"
-> t  0.90100    > func "TestSequence::testGetBestSequence5()"
-> t  0.95900    < func "TestSequence::testGetBestSequence5()"
-> t  0.95900    > func "TestSequence::testGetBestSequence5()"
-> t  1.03100    < func "TestSequence::testGetBestSequence5()"
-> t  1.03100    > func "TestSequence::testGetBestSequence5()"
-> t  1.09700    < func "TestSequence::testGetBestSequence5()"
-> t  1.09700    > func "TestSequence::testGetBestSequence5()"
-> t  1.15000    < func "TestSequence::testGetBestSequence5()"
-> t  1.15000    > func "TestSequence::testGetBestSequence5()"
-> t  1.20600    < func "TestSequence::testGetBestSequence5()"
-> t  1.20800    > func "TestFileInput::testReadAircraftFromFile()"
-> t  1.21700    < func "TestFileInput::testReadAircraftFromFile()"
-> t  1.25700    end of main before return
-> t  1.25800 < func "Scheduling::main()"
-> t  1.25900 
-> t  1.25900 > idusage
-> t  1.25900          #HISTORY/10        #LINESTAMP/1     TestFileInput/7    TestGuestArray/5
-> t  1.25900      TestSequence/14            always/2              main/1
-> t  1.25900 < idusage
+> t  0.31600 LogTrace output started
+> t  0.31600 > func "Scheduling::main()"
+> t  1.41500    > func "TestGuestArray::testDeleteElement()"
+> t  1.41700    < func "TestGuestArray::testDeleteElement()"
+> t  1.41700    > func "TestGuestArray::testDeleteFirstN_Elements1()"
+> t  1.42000    < func "TestGuestArray::testDeleteFirstN_Elements1()"
+> t  1.42000    > func "TestGuestArray::testDeleteFirstN_Elements2()"
+> t  1.42200    < func "TestGuestArray::testDeleteFirstN_Elements2()"
+> t  1.51500    > func "TestGuestArray::testEmptyGuestArray()"
+> t  1.51600    < func "TestGuestArray::testEmptyGuestArray()"
+> t  1.51600    > func "TestFileInput::testRead5GuestsNoEmptyLine()"
+> t  1.51600       > func "TestFileInput::testReadGuestsFromFile()"
+> t  1.52200       < func "TestFileInput::testReadGuestsFromFile()"
+> t  1.52200    < func "TestFileInput::testRead5GuestsNoEmptyLine()"
+> t  1.52200    > func "TestFileInput::testRead3GuestsEmptyLines()"
+> t  1.52200       > func "TestFileInput::testReadGuestsFromFile()"
+> t  1.52600       < func "TestFileInput::testReadGuestsFromFile()"
+> t  1.52700    < func "TestFileInput::testRead3GuestsEmptyLines()"
+> t  1.52700    > func "TestFileInput::testCalcMinutesOfDay()"
+> t  1.52700    < func "TestFileInput::testCalcMinutesOfDay()"
+> t  1.52700    > func "TestFileInput::testCalcHourMinute()"
+> t  1.52700    < func "TestFileInput::testCalcHourMinute()"
+> t  1.52700    > func "TestSequence::testEvaluateTime()"
+> t  1.52700    < func "TestSequence::testEvaluateTime()"
+> t  1.52700    > func "TestSequence::testEvaluateSequence()"
+> t  1.53000    < func "TestSequence::testEvaluateSequence()"
+> t  1.53000    > func "TestGuestArray::testCopyGuestArray()"
+> t  1.53200    < func "TestGuestArray::testCopyGuestArray()"
+> t  1.53200    > func "TestSequence::testPermuation()"
+> t  1.53300       1. Permutation: 
+> t  1.53300       1 
+> t  1.53300       9 
+> t  1.53300       2 
+> t  1.53300       3 
+> t  1.53300       2. Permutation: 
+> t  1.53300       1 
+> t  1.53300       9 
+> t  1.53300       3 
+> t  1.53300       2 
+> t  1.53300       3. Permutation: 
+> t  1.53300       2 
+> t  1.53300       1 
+> t  1.53300       3 
+> t  1.53300       9 
+> t  1.53300       4. Permutation: 
+> t  1.53300       2 
+> t  1.53300       1 
+> t  1.53300       9 
+> t  1.53300       3 
+> t  1.53300       5. Permutation: 
+> t  1.53300       2 
+> t  1.53300       3 
+> t  1.53300       1 
+> t  1.53300       9 
+> t  1.53300       6. Permutation: 
+> t  1.53400       2 
+> t  1.53400       3 
+> t  1.53400       9 
+> t  1.53400       1 
+> t  1.53400       7. Permutation: 
+> t  1.53400       2 
+> t  1.53400       9 
+> t  1.53400       1 
+> t  1.53400       3 
+> t  1.53400       8. Permutation: 
+> t  1.53400       2 
+> t  1.53400       9 
+> t  1.53400       3 
+> t  1.53400       1 
+> t  1.53400       9. Permutation: 
+> t  1.53400       3 
+> t  1.53400       1 
+> t  1.53400       2 
+> t  1.53400       9 
+> t  1.53400       10. Permutation: 
+> t  1.53400       3 
+> t  1.53400       1 
+> t  1.53400       9 
+> t  1.53400       2 
+> t  1.53400       11. Permutation: 
+> t  1.53400       3 
+> t  1.53400       2 
+> t  1.53500       1 
+> t  1.53500       9 
+> t  1.53500       12. Permutation: 
+> t  1.53500       3 
+> t  1.53500       2 
+> t  1.53500       9 
+> t  1.53500       1 
+> t  1.53500       13. Permutation: 
+> t  1.53500       3 
+> t  1.53500       9 
+> t  1.53500       1 
+> t  1.53500       2 
+> t  1.53500       14. Permutation: 
+> t  1.53500       3 
+> t  1.53500       9 
+> t  1.53500       2 
+> t  1.53500       1 
+> t  1.53500       15. Permutation: 
+> t  1.53500       9 
+> t  1.53500       1 
+> t  1.53500       2 
+> t  1.53500       3 
+> t  1.53500       16. Permutation: 
+> t  1.53500       9 
+> t  1.53500       1 
+> t  1.53500       3 
+> t  1.53500       2 
+> t  1.53600       17. Permutation: 
+> t  1.53600       9 
+> t  1.53600       2 
+> t  1.53600       1 
+> t  1.53600       3 
+> t  1.53600       18. Permutation: 
+> t  1.53600       9 
+> t  1.53600       2 
+> t  1.53600       3 
+> t  1.53600       1 
+> t  1.53600       19. Permutation: 
+> t  1.53600       9 
+> t  1.53600       3 
+> t  1.53600       1 
+> t  1.53600       2 
+> t  1.53600       20. Permutation: 
+> t  1.53600       9 
+> t  1.53600       3 
+> t  1.53600       2 
+> t  1.53600       1 
+> t  1.53600       21. Permutation: 
+> t  1.53600       1 
+> t  1.53600       2 
+> t  1.53600       3 
+> t  1.53600       9 
+> t  1.53700       22. Permutation: 
+> t  1.53700       1 
+> t  1.53700       2 
+> t  1.53700       9 
+> t  1.53700       3 
+> t  1.53700       23. Permutation: 
+> t  1.53700       1 
+> t  1.53700       3 
+> t  1.53700       2 
+> t  1.53700       9 
+> t  1.53700       24. Permutation: 
+> t  1.53700       1 
+> t  1.53700       3 
+> t  1.53700       9 
+> t  1.53700       2 
+> t  1.53700    < func "TestSequence::testPermuation()"
+> t  1.53700    > func "TestSequence::testGetBestSequence()"
+> t  1.54100    < func "TestSequence::testGetBestSequence()"
+> t  1.54100    > func "TestSequence::testGetBestSequence5()"
+> t  1.59300    < func "TestSequence::testGetBestSequence5()"
+> t  1.59300    > func "TestSequence::testGetBestSequence5()"
+> t  1.64300    < func "TestSequence::testGetBestSequence5()"
+> t  1.64400    > func "TestSequence::testGetBestSequence5()"
+> t  1.69600    < func "TestSequence::testGetBestSequence5()"
+> t  1.69600    > func "TestSequence::testGetBestSequence5()"
+> t  1.74500    < func "TestSequence::testGetBestSequence5()"
+> t  1.74600    > func "TestSequence::testGetBestSequence5()"
+> t  1.79500    < func "TestSequence::testGetBestSequence5()"
+> t  1.79500    > func "TestSequence::testGetBestSequence5()"
+> t  1.84800    < func "TestSequence::testGetBestSequence5()"
+> t  1.84800    > func "TestSequence::testGetBestSequence5()"
+> t  1.90400    < func "TestSequence::testGetBestSequence5()"
+> t  1.90400    > func "TestSequence::testGetBestSequence5()"
+> t  1.95400    < func "TestSequence::testGetBestSequence5()"
+> t  1.95400    > func "TestSequence::testGetBestSequence5()"
+> t  2.00300    < func "TestSequence::testGetBestSequence5()"
+> t  2.00300    > func "TestSequence::testGetBestSequence5()"
+> t  2.05500    < func "TestSequence::testGetBestSequence5()"
+> t  2.05700    > func "TestFileInput::testReadAircraftFromFile()"
+> t  2.06900    < func "TestFileInput::testReadAircraftFromFile()"
+> t  2.11000    end of main before return
+> t  2.11100 < func "Scheduling::main()"
+> t  2.11100 
+> t  2.11100 > idusage
+> t  2.11100          #HISTORY/10        #LINESTAMP/1     TestFileInput/7    TestGuestArray/5
+> t  2.11100      TestSequence/14            always/2              main/1
+> t  2.11100 < idusage
