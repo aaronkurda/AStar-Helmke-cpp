@@ -10,6 +10,7 @@ public:
 	vector<GuestNode*>* getPathIncludingRoot(GuestNode* node);
 
 	GuestNode* getRoot();
+	void setRoot(GuestNode* root);
 private:
 	GuestNode* root;
 };

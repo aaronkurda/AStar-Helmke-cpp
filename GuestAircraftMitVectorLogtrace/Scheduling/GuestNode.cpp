@@ -195,3 +195,17 @@ void GuestNode::count(int& n) {
 		gn->count(n);
 	}
 }
+
+void GuestNode::setParent(GuestNode* parent) {
+	this->parent = parent;
+}
+
+void GuestNode::removeFromParent() {
+	vector<GuestNode*>* children = this->parent->getChildren();
+	for (int i = 0; i < children->size(); i++) {
+		if (children->at(i) == this) {
+			children->erase(children->begin() + i);
+			return;
+		}
+	}
+}

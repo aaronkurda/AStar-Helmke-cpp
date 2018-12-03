@@ -20,13 +20,15 @@ public:
       const class GuestArray& guests, class GuestArray& bestSeq);
    double getEvalForBestSeq() const  { return md_bestSeqValue;}
 
-   vector<GuestNode*>* expandAll(vector<GuestNode*>* toExpand,int maxExpand, vector<const Guest*>& closedList);
-   GuestNode* generateTree(vector<const Guest*>& entityList);
+   GuestNode* lazyCutExpand(vector<const Guest*>& entityList);
+   void tsExpand(vector<const Guest*>* allEntities, int take, int select);
 
    GuestTree* getTree();
    int size();
 private:
    double md_bestSeqValue;
+
+   vector<GuestNode*>* expandAll(vector<GuestNode*>* toExpand, int maxExpand, vector<const Guest*>& closedList);
 
    GuestTree* tree;
 

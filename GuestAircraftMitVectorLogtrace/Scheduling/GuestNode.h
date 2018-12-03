@@ -26,6 +26,8 @@ public:
 	vector<GuestNode*>* getChildren();
 	const Guest* getGuest();
 	GuestNode* getParent();
+	void setParent(GuestNode* parent);
+	void removeFromParent();
 	int getCurrentTime();
 
 	bool operator>(GuestNode& op2);

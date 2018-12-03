@@ -22,6 +22,7 @@ vector<GuestNode*>* GuestTree::getPathExcludingRoot(GuestNode* node) {
 		path->push_back(current);
 		current = current->getParent();
 	}
+	reverse(path->begin(), path->end());
 	return path;
 }
 
@@ -32,11 +33,17 @@ vector<GuestNode*>* GuestTree::getPathIncludingRoot(GuestNode* node) {
 		path->push_back(current);
 		current = current->getParent();
 	}
+	reverse(path->begin(), path->end());
 	return path;
 }
 
 GuestNode* GuestTree::getRoot() {
 	return root;
+}
+
+void GuestTree::setRoot(GuestNode* root) {
+	this->root = root;
+	root->setParent(nullptr);
 }
 
 
