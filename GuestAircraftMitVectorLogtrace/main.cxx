@@ -37,10 +37,6 @@ using namespace logtrace;
 
 
 int main(){
-  printf("-------------------------------------------\n");
-
-  printf("\n-------------------------------------------\n\n\n");
-
   bool result = true;
   LOGTRACE_INIT(
      string(FILE_BASE_DIR_NAME + "./Data/scheduling.trc").c_str(), 
@@ -49,7 +45,7 @@ int main(){
   LOG_FUNCTION("Scheduling", "main", "");
 
 
-  PERFORM_AND_OUTPUT(test5to9SimpleGuestFiles);
+  //PERFORM_AND_OUTPUT(test5to9SimpleGuestFiles);
   PERFORM_AND_OUTPUT(test10to15SimpleGuestFiles);
   PERFORM_AND_OUTPUT(test5to15DifficultGuestFiles);
 

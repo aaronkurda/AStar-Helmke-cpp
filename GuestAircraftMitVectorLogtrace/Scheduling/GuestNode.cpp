@@ -201,11 +201,13 @@ void GuestNode::setParent(GuestNode* parent) {
 }
 
 void GuestNode::removeFromParent() {
-	vector<GuestNode*>* children = this->parent->getChildren();
-	for (int i = 0; i < children->size(); i++) {
-		if (children->at(i) == this) {
-			children->erase(children->begin() + i);
-			return;
+	if (this->parent != nullptr) {
+		vector<GuestNode*>* children = this->parent->getChildren();
+		for (int i = 0; i < children->size(); i++) {
+			if (children->at(i) == this) {
+				children->erase(children->begin() + i);
+				return;
+			}
 		}
 	}
 }

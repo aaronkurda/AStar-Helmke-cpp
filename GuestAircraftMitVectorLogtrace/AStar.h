@@ -21,7 +21,7 @@ public:
    double getEvalForBestSeq() const  { return md_bestSeqValue;}
 
    GuestNode* lazyCutExpand(vector<const Guest*>& entityList);
-   void tsExpand(vector<const Guest*>* allEntities, int take, int select);
+   vector<GuestNode*>* tsExpand(vector<const Guest*>* allEntities, int take, int select);
 
    GuestTree* getTree();
    int size();
