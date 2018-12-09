@@ -40,6 +40,8 @@ public:
 
 	void count(int& n);
 
+	void deleteChildren();
+
 	string toString();
 	string subtreeToString();
 private:

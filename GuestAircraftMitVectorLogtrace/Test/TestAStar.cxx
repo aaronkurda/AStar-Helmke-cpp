@@ -181,19 +181,18 @@ Sie bekommen einfache Dateien mit 10 bis 15 Gästen:
 Alle Ergebnisse richtig innerhalb von 60 Sekunden Rechenzeit
 */
 bool test10to15SimpleGuestFiles() {
-   LOG_FUNCTION(CLASS_LT, "test10to15SimpleGuestFiles", "");
-   bool retValue = true;
+	LOG_FUNCTION(CLASS_LT, "test10to15SimpleGuestFiles", "");
+	bool retValue = true;
 
-   // Die Dateien werden noch veraendert und damit auch die erwarteten Ergebnisse
-   retValue = retValue && testSeqValueAndSequence(
-      FILE_BASE_DIR_NAME + "./Data/WettbewerbGuests2018/Gaeste5Linear.txt",
-      { "Anna", "Mike", "Matthias", "Olga", "Sönke" }, 41.0);
+	retValue = retValue && testSeqValueAndSequence(
+		FILE_BASE_DIR_NAME + "./Data/WettbewerbGuests2018/Gaeste5Linear.txt",
+		{ "Anna", "Mike", "Matthias", "Olga", "Sönke" }, 41.0);
 
-   cout << "nur Geduld: In Kuerze erhalten Sie die echte Implementierung dieser Funktion\n";
 
-   cout << endl << endl;
-   return retValue;
+	cout << "nur Geduld: In Kuerze erhalten Sie die echte Implementierung dieser Funktion\n";
 
+	cout << endl << endl;
+	return retValue;
 } // test10to15SimpleGuestFiles
 
 

@@ -45,7 +45,7 @@ int main(){
   LOG_FUNCTION("Scheduling", "main", "");
 
 
-  //PERFORM_AND_OUTPUT(test5to9SimpleGuestFiles);
+  PERFORM_AND_OUTPUT(test5to9SimpleGuestFiles);
   PERFORM_AND_OUTPUT(test10to15SimpleGuestFiles);
   PERFORM_AND_OUTPUT(test5to15DifficultGuestFiles);
 

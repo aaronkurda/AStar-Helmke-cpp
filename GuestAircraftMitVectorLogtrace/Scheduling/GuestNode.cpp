@@ -45,8 +45,11 @@ vorher aus dem Vector zu entfernen.
 */
 GuestNode::~GuestNode()
 {
-	//this->children->clear();
-	//delete &children;
+	if (children != NULL) {
+		if(children->size() > 0)
+			this->children->clear();
+		delete children;
+	}
 }
 
 /*
@@ -202,12 +205,19 @@ void GuestNode::setParent(GuestNode* parent) {
 
 void GuestNode::removeFromParent() {
 	if (this->parent != nullptr) {
-		vector<GuestNode*>* children = this->parent->getChildren();
+		vector<GuestNode*>* children = this->getParent()->getChildren();
 		for (int i = 0; i < children->size(); i++) {
 			if (children->at(i) == this) {
 				children->erase(children->begin() + i);
 				return;
 			}
 		}
+	}
+}
+
+void GuestNode::deleteChildren() {
+	if (this->children != nullptr) {
+		this->children->clear();
+		delete this->children;
 	}
 }

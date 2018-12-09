@@ -35,6 +35,7 @@
     <ClInclude Include="..\logtrace\logstream.hpp" />
     <ClInclude Include="..\logtrace\logtrace.h" />
     <ClInclude Include="..\logtrace\ttime.hpp" />
+    <ClInclude Include="..\main.h" />
     <ClInclude Include="..\QualityFuncAircraft.h" />
     <ClInclude Include="..\QualityFuncBase.h" />
     <ClInclude Include="..\QualityFuncInterface.h" />

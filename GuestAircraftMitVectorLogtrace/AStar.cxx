@@ -47,8 +47,8 @@ bool AStar::getBestSequence
 {
 	cout << "---------------CALLED BEST SEQUENCE--------------" << endl;
    LOG_METHOD(NAMESP_LT, CLASS_LT, "getBestSequence", "");
-   const int select = 3;
-   const int take = 1;
+   const int select = 11;
+   const int take = 2;
    TakeSelectSearchParam param(select, take, 1);
    TakeSelect strategy(param);
    md_bestSeqValue = strategy.GetBestSeq(guests, bestSeq);
@@ -60,11 +60,11 @@ bool AStar::getBestSequence
 	   const Guest* temp = & guests.getGuest(i);
 	   guestArr.push_back(temp);
    }
-   vector<GuestNode*>* path = tsExpand(&guestArr, 4, 2);
-   cout << "Best Sequence cost: " << path->at(path->size() - 1)->getFCost() << endl;
+   vector<const Guest*>* path = tsExpand(&guestArr, 11, 2);
+   //cout << "Best Sequence cost: " << path->at(path->size() - 1)->getFCost() << endl;
    for (int i = 0; i < path->size(); i++) {
-	   bestSeq.setGuest(i, *path->at(i)->getGuest());
-	   cout << i << path->at(i)->toString() << endl;
+	   bestSeq.setGuest(i, *path->at(i));
+	   cout << i << path->at(i)->getGuestName() << endl;
    }
    delete tree;
    delete path;
@@ -92,7 +92,7 @@ bool sortGuests(const Guest* g1, const Guest* g2) {
 	return (g1->getWakeUpTime() < g2->getWakeUpTime());
 }
 
-vector<GuestNode*>* AStar::tsExpand(vector<const Guest*>* allEntities, int take, int select) {
+vector<const Guest*>* AStar::tsExpand(vector<const Guest*>* allEntities, int take, int select) {
 	cout << "Starting A* with " << take << "/" << select << endl;
 	vector<const Guest*> openList = vector<const Guest*>();
 	for (int i = 0; i < allEntities->size(); i++) {
@@ -113,7 +113,12 @@ vector<GuestNode*>* AStar::tsExpand(vector<const Guest*>* allEntities, int take,
 	//cout << "Initialised closedList with " << closedList.size() << " Elements." << endl;
 
 	vector<GuestNode*>* path = new vector<GuestNode*>();
-	
+
+	vector<const Guest*>* guestPath = new vector<const Guest*>();
+	vector<int>* costPath = new vector<int>();
+
+	int removeChildrenCounter = 0;
+
 	while (!closedList.empty()) {
 		GuestNode* minimum = lazyCutExpand(closedList);
 		vector<GuestNode*>* pathFraction = tree->getPathExcludingRoot(minimum);
@@ -138,6 +143,8 @@ vector<GuestNode*>* AStar::tsExpand(vector<const Guest*>* allEntities, int take,
 			}
 			
 			path->push_back(temp);
+			guestPath->push_back(temp->getGuest());
+			costPath->push_back(temp->getFCost());
 			
 
 			for (int r = 0; r < closedList.size(); r++) {
@@ -152,21 +159,21 @@ vector<GuestNode*>* AStar::tsExpand(vector<const Guest*>* allEntities, int take,
 			}
 		}
 		GuestNode* temp = path->at(path->size() - 1);
-		for (int i = 0; i < path->size(); i++) {
-			path->at(i)->removeFromParent();
-		}
+		temp->removeFromParent();
+		//for (; removeChildrenCounter < path->size() - 1; removeChildrenCounter++) {
+		//	path->at(removeChildrenCounter)->deleteChildren();
+		//}
 
-		/*for (int i = 0; i < path->size() - 1; i++) {
-			path->at(i)->getChildren()->clear();
-		}*/
-		//delete tree->getRoot();
+		delete tree->getRoot();
 		tree->setRoot(path->at(path->size() - 1));
 	}
+
+	cout << costPath->at(costPath->size() - 1) << endl;
 
 	/*for (int i = 0; i < path->size(); i++) {
 		cout << path->at(i) << endl;
 	}*/
-	return path;
+	return guestPath;
 	
 
 }

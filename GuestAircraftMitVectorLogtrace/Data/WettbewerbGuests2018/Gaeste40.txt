@@ -1,0 +1,217 @@
+Name        Aufstehzeit Badzeit
+Fritze       14:00          7
+Matthias    08:14          5
+Anna        08:15          2
+Joachim2     10:20          1
+Lothar2      09:00          4
+Joachim3     11:20          1
+Matthias3    11:14          2
+Anna3        11:18          2
+Mike3        11:15          4
+Sönke3       11:34          52
+Mike1        08:15          4
+Sönke1       08:34          52
+Olga1        08:45          17
+Fritz1       08:44          13
+Hans1        08:41          16
+Lothar1      09:00          4
+Joachim1     08:20          1
+Matthias2    10:14          2
+Anna2        10:18          2
+Mike2        10:15          4
+Sönke2       10:34          52
+Olga2        10:45          17
+Fritz2       10:44          13
+Hans2        10:41          16
+Olga3        11:45          7
+Fritz3       11:44          13
+Hans3        11:41          6
+Lothar3      09:00          7
+Konrad       13:45          7
+Arthur       11:44          13
+Elke         11:41          16
+Mike        08:15          4
+Sönke       08:30          52
+Olga        08:45          17
+Fritz       08:45          13
+Hans        08:41          16
+Lothar      09:00          4
+Joachim     08:20          1
+Matthias1    08:14          2
+Anna1        08:18          2
+Ende
+
+Ergebnis mit 11/2 Take/Select-Astar bei linearen nicht monotonen Funktionen.
+Need time: (TakeSelect11/2): 1021.33, QualiFunc-Calls: 15685426, quality: 1605
+
+   Matthias1     08:14    2   08:14
+        Anna     08:15    2   08:16
+       Anna1     08:18    2   08:18
+     Joachim     08:20    1   08:20
+    Joachim1     08:20    1   08:21
+       Mike1     08:15    4   08:22
+        Mike     08:15    4   08:26
+    Matthias     08:14    5   08:30
+       Hans1     08:41   16   08:41
+     Lothar2     09:00    4   09:00
+     Lothar1     09:00    4   09:04
+      Lothar     09:00    4   09:08
+     Lothar3     09:00    7   09:12
+      Fritz1     08:44   13   09:19
+       Fritz     08:45   13   09:32
+        Hans     08:41   16   09:45
+        Olga     08:45   17   10:01
+   Matthias2    10:14    2   10:18
+    Joachim2    10:20    1   10:20
+       Anna2    10:18    2   10:21
+       Mike2    10:15    4   10:23
+       Olga1     08:45   17   10:27
+      Fritz2    10:44   13   10:44
+       Hans2    10:41   16   10:57
+   Matthias3    11:14    2   11:14
+       Mike3    11:15    4   11:16
+    Joachim3    11:20    1   11:20
+       Anna3    11:18    2   11:21
+       Olga2    10:45   17   11:23
+       Hans3    11:41    6   11:41
+       Olga3    11:45    7   11:47
+      Fritz3    11:44   13   11:54
+      Arthur    11:44   13   12:07
+        Elke    11:41   16   12:20
+       S÷nke     08:30   52   12:36
+      S÷nke2    10:34   52   13:28
+      Konrad    13:45    7   14:20
+      Fritze    14:00    7   14:27
+      S÷nke1     08:34   52   14:34
+      S÷nke3    11:34   52   15:26
+
+
+Ergebnis von Take/Select 11/2 mit quadratische Bewertungfunktion:
+
+Need time: (TakeSelect11/2): 2519.44, QualiFunc-Calls: 34620712, quality: 268417
+   Matthias1     08:14    2   08:14
+        Anna     08:15    2   08:16
+       Anna1     08:18    2   08:18
+    Joachim1     08:20    1   08:20
+     Joachim     08:20    1   08:21
+       Mike1     08:15    4   08:22
+        Mike     08:15    4   08:26
+    Matthias     08:14    5   08:30
+       Hans1     08:41   16   08:41
+      Fritz1     08:44   13   08:57
+     Lothar2     09:00    4   09:10
+     Lothar1     09:00    4   09:14
+      Lothar     09:00    4   09:18
+     Lothar3     09:00    7   09:22
+       Fritz     08:45   13   09:29
+        Hans     08:41   16   09:42
+       Olga1     08:45   17   09:58
+        Olga     08:45   17   10:15
+    Joachim2    10:20    1   10:32
+   Matthias2    10:14    2   10:33
+       Anna2    10:18    2   10:35
+       Mike2    10:15    4   10:37
+       Sönke     08:30   52   10:41
+    Joachim3    11:20    1   11:33
+   Matthias3    11:14    2   11:34
+       Anna3    11:18    2   11:36
+       Mike3    11:15    4   11:38
+      Fritz2    10:44   13   11:42
+       Hans2    10:41   16   11:55
+       Hans3    11:41    6   12:11
+       Olga3    11:45    7   12:17
+       Olga2    10:45   17   12:24
+      Fritz3    11:44   13   12:41
+      Arthur    11:44   13   12:54
+        Elke    11:41   16   13:07
+      Sönke1     08:34   52   13:23
+      Konrad    13:45    7   14:15
+      Fritze    14:00    7   14:22
+      Sönke2    10:34   52   14:29
+      Sönke3    11:34   52   15:21
+
+
+
+nicht monoton, alles quadratisch, 10fach für zu früh, Greedy Ergebnis
+        Anna     08:15    2   08:16
+   Matthias1     08:14    2   08:17
+       Mike1     08:15    4   08:19
+     Joachim     08:20    1   08:23
+    Joachim1     08:20    1   08:24
+       Anna1     08:18    2   08:25
+        Mike     08:15    4   08:27
+    Matthias     08:14    5   08:31
+       Hans1     08:41   16   08:41
+      Fritz1     08:44   13   08:57
+     Lothar2     09:00    4   09:10
+      Lothar     09:00    4   09:14
+     Lothar1     09:00    4   09:18
+     Lothar3     09:00    7   09:22
+       Fritz     08:45   13   09:29
+        Hans     08:41   16   09:42
+        Olga     08:45   17   09:58
+       Olga1     08:45   17   10:15
+    Joachim2    10:20    1   10:32
+   Matthias2    10:14    2   10:33
+       Anna2    10:18    2   10:35
+       Mike2    10:15    4   10:37
+       Sönke     08:30   52   10:41
+    Joachim3    11:20    1   11:33
+   Matthias3    11:14    2   11:34
+       Anna3    11:18    2   11:36
+       Mike3    11:15    4   11:38
+      Fritz2    10:44   13   11:42
+       Hans2    10:41   16   11:55
+       Hans3    11:41    6   12:11
+       Olga3    11:45    7   12:17
+       Olga2    10:45   17   12:24
+      Fritz3    11:44   13   12:41
+      Arthur    11:44   13   12:54
+        Elke    11:41   16   13:07
+      Sönke1     08:34   52   13:23
+      Konrad    13:45    7   14:15
+      Fritze    14:00    7   14:22
+      Sönke2    10:34   52   14:29
+      Sönke3    11:34   52   15:21
+
+nicht monoton, alles quadratisch, 1fach für zu früh, Tabu Ergebnis
+   Matthias1     08:14    2   08:14
+        Anna     08:15    2   08:16
+       Mike1     08:15    4   08:18
+     Joachim     08:20    1   08:22
+    Joachim1     08:20    1   08:23
+       Anna1     08:18    2   08:24
+        Mike     08:15    4   08:26
+    Matthias     08:14    5   08:30
+       Hans1     08:41   16   08:41
+      Fritz1     08:44   13   08:57
+     Lothar1     09:00    4   09:10
+      Lothar     09:00    4   09:14
+     Lothar2     09:00    4   09:18
+     Lothar3     09:00    7   09:22
+       Fritz     08:45   13   09:29
+        Hans     08:41   16   09:42
+        Olga     08:45   17   09:58
+       Olga1     08:45   17   10:15
+    Joachim2    10:20    1   10:32
+   Matthias2    10:14    2   10:33
+       Anna2    10:18    2   10:35
+       Mike2    10:15    4   10:37
+       Sönke     08:30   52   10:41
+    Joachim3    11:20    1   11:33
+   Matthias3    11:14    2   11:34
+       Anna3    11:18    2   11:36
+       Mike3    11:15    4   11:38
+      Fritz2    10:44   13   11:42
+       Hans2    10:41   16   11:55
+       Hans3    11:41    6   12:11
+       Olga3    11:45    7   12:17
+       Olga2    10:45   17   12:24
+      Fritz3    11:44   13   12:41
+      Arthur    11:44   13   12:54
+        Elke    11:41   16   13:07
+      Sönke1     08:34   52   13:23
+      Konrad    13:45    7   14:15
+      Fritze    14:00    7   14:22
+      Sönke2    10:34   52   14:29
+      Sönke3    11:34   52   15:21
